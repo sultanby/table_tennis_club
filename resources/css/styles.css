@@ -1,3 +1,46 @@
-html {
-    background-color: black;
+html, body {
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    padding-left: 1rem;
+}
+
+.header-content {
+    padding: 1rem 1rem;
+    justify-content: space-between;
+}
+
+.header-content nav ul{
+    display: flex;
+}
+
+.header-content ul li {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+   
 }
