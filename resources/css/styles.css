@@ -4,7 +4,7 @@ html, body {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-/* Header */
+/* header */
 
 header {
     position: fixed;
@@ -15,20 +15,23 @@ header {
 .header-content {
     display: flex;
     align-items: center;
+    color: palegreen;
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
 }
 
 .logo a {
     padding-left: 1rem;
+    color: palegreen;
+    text-transform: lowercase;
 }
 
 .header-content {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     justify-content: space-between;
 }
 
@@ -41,6 +44,117 @@ header {
     padding-left: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .logo a {
+        text-align: center;
+    }
+
+    .logo img {
+        height: 2.5rem;
+    }
+
+    .header-content ul li {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
-   
+    .logo {
+        font-size: .75rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo a {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 2rem;
+    }
+
+    .header-content {
+        padding: 1rem 1rem;
+    }
+
+    .header-content ul li {
+        font-size: .75rem;
+        padding-left: 1rem;
+    }
+}
+
+/* title */
+
+#title {
+    height: 950px;
+    position: relative; 
+}
+
+#title::before {
+    content: "";
+    background-image: url('../imgs/background.jpeg');
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#title-text {
+    position: absolute;
+    width: 30%;
+    top: 40%;
+    left: 55%;
+    text-align: center;
+}
+
+#title-text h1 {
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-size: 6rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+#title-text h2 {
+    font-size: 2rem;
+}
+
+#title-text button {
+    border-radius: 25px;
+    border: none;
+    background: palegreen;
+    width: 100%;
+    height: 50px;
+    margin: 1rem 0;
+}
+
+#button-text {
+    font-size: 1rem;
+    letter-spacing: .3rem;
+}
+
+@media screen and (max-width: 600px) {
+    #title-text  {
+        text-align: center;
+        position: relative;
+        left: auto;
+        top: 35%;
+        width: 40%;
+    }
+
+    #title-text h1 {
+        font-size: 3rem;
+    }
+    
 }
