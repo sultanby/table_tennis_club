@@ -93,7 +93,7 @@ header {
 /* title */
 
 #title {
-    height: 950px;
+    height: 100vh;
     position: relative; 
 }
 
@@ -120,7 +120,7 @@ header {
 }
 
 #title-text h1 {
-    font-family: 'BhuTuka Expanded One', cursive;
+    font-family: 'BhuTuka Expanded One', sans-serif;
     font-size: 6rem;
     font-weight: 500;
     padding-bottom: 2rem;
@@ -144,13 +144,28 @@ header {
     letter-spacing: .3rem;
 }
 
+@media screen and (max-width: 768px) {
+    #title {
+        height: 100vh;
+    }
+
+    #title-text  {
+        left: 50%;
+        top: 30%;
+        width: 40%;
+    }
+
+    #title-text h1 {
+        font-size: 3rem;
+    }
+    
+}
+
+
 @media screen and (max-width: 600px) {
     #title-text  {
-        text-align: center;
-        position: relative;
         left: auto;
         top: 35%;
-        width: 40%;
     }
 
     #title-text h1 {
