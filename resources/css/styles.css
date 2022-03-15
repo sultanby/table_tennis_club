@@ -1,7 +1,19 @@
 html, body {
-    background-color: whitesmoke;
+    background-color: snow;
     font-size: 16px;
     font-family: 'Space Grotesk', sans-serif;
+}
+
+section h2 {
+    font-size: 5rem;
+    margin: 2rem 0;
+    text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    section h2 {
+        font-size: 3rem;
+    }
 }
 
 /* header */
@@ -194,12 +206,6 @@ header {
 
 /* news */
 
-#news h2 {
-    font-size: 5rem;
-    margin: 2rem 0;
-    text-align: right;
-}
-
 #news .news-container {
     display: flex;
     align-items: center;
@@ -221,6 +227,11 @@ header {
 .case .header {
     font-weight: 600;
     padding-bottom: .5rem;
+}
+
+.case .termin {
+    border-top: 2px solid palegreen;
+    padding: .1rem 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -251,41 +262,56 @@ header {
 
 /* gallery */
 
-#gallery h2 {
-    font-size: 5rem;
-    margin: 2rem 0;
-    text-align: right;
-}
-
 .row {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .column {
-  flex: 25%;
-  max-width: 25%;
+    flex: 25%;
+    max-width: 25%;
 }
 
 .column img {
-  vertical-align: middle;
-  width: 100%;
+    vertical-align: middle;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 
-  .mobile {
-      display: none;
-  }
+    .mobile {
+        display: none;
+    }
+}
+
+/* contact */
+
+.contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.address-container {
+    padding: 2rem;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+}
+
+.address img {
+    width: 3rem;
+    padding-right: 1rem;
 }
