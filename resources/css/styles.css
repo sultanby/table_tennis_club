@@ -332,3 +332,48 @@ header {
         padding-right: 1rem;
     }
 }
+
+/* footer */
+
+footer {
+    padding: 2rem;
+    border-top: 1px solid palegreen;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .logo a {
+    color: black;
+}
+
+footer .logo {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+footer .logo img {
+    height: 2rem;
+}
+
+.footer-container nav ul{
+    display: flex;
+}
+
+.footer-container ul li {
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-container nav ul{
+        display: none;
+    }
+    
+}
+
